@@ -30,9 +30,6 @@ class Department {
 	public String getDep_id() {
 		return dep_id;
 	}
-
-	
-
 }
 
 public class Test{
@@ -41,7 +38,7 @@ public class Test{
 		
 		Department department = new Department();
 		Employee employee = new Employee("Sonal",department);
-		
+		System.out.println(employee);
 		// if u r setting the dep_id n name, so breaking the immutability, so for that
 		// make name & dept_id as final in "Department" class, then immutability will be achieved.
 		//department.setDep_id("dd");

@@ -17,7 +17,7 @@ public class CollectionsBinarySearch {
 		list.add(4);
 		list.add(5);
 		
-		System.out.println(Collections.binarySearch(list, 1));
+		System.out.println(Collections.binarySearch(list, 3));
 
 	}
 

@@ -26,12 +26,14 @@ public class EqualsMethodAndOperator {
 		Emp emp2 = new Emp(1, "Sonal");
 		Emp emp3 = new Emp(2, "Sona");
 		
+		System.out.println(emp1==emp2);
 		System.out.println(emp1.equals(emp2));
 		System.out.println(emp1.equals(emp3));
 		
 		emp1=emp2;
 		
 	    System.out.println(emp1==emp2);
+	    System.out.println(emp1.equals(emp2));
 		
 
 	}
