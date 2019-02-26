@@ -60,7 +60,7 @@ class Laptops implements Comparable<Laptops> {
 		return 0;
 	}
 }
-// Laptops have defined their own way of sorting, what if we want to chnage the sorting logice.
+// Laptops have defined their own way of sorting, what if we want to chnage the sorting logic.
 public class ComparatorDemo {
 
 	public static void main(String[] args) {

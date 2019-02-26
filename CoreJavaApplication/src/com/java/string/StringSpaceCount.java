@@ -16,14 +16,16 @@ public class StringSpaceCount {
 		System.out.println("wordCount "+spaceCount);
 		System.out.println("spaceCount "+(spaceCount-1));
 		
-		//-------------------------------------------------------------------------------
+		
+		
+		//-----------------------------OR--------------------------------------------------
 		
 		
 		
-		String str1 = "Sonal Gupta";
-		int strLength = str1.length();
+		String str1 = "Sonal Gupta Gupya";
 		String[] st = str1.split("\\s");
-		System.out.println("space count "+((st.length)-1));
+		System.out.println("alt word count "+st.length);
+		System.out.println("alt space count "+((st.length)-1));
 
 	}
 
