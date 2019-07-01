@@ -1,7 +1,8 @@
 package com.java.collection.Map;
 /* Java program to print frequencies of all elements using 
 HashMap */
-import java.util.*; 
+import java.util.*;
+import java.util.Map.Entry; 
 
 class CountOccurenceOfEachIntInArr 
 { 
@@ -15,21 +16,19 @@ class CountOccurenceOfEachIntInArr
 		// Traverse through the given array 
 		for (int i = 0; i < arr.length; i++) 
 		{ 
-			Integer c = hmap.get(arr[i]); 
-
-			// If this is first occurrence of element 
-			if (hmap.get(arr[i]) == null) 
-			hmap.put(arr[i], 1); 
-
+		
 			// If elements already exists in hash map 
-			else
-			hmap.put(arr[i], ++c); 
+			if(hmap.containsKey(arr[i])) {
+				hmap.put(arr[i], hmap.get(arr[i])+1);
+			}else { // If this is first occurrence of element 
+				hmap.put(arr[i], 1);
+			}
 		} 
-
-		// Print result 
-		for (Map.Entry m:hmap.entrySet()) 
-		System.out.println("Frequency of " + m.getKey() + 
-							" is " + m.getValue()); 
+		
+		for(Map.Entry<Integer, Integer> mapEntry : hmap.entrySet()) {
+			//System.out.println("mapEntry "+mapEntry);
+			System.out.println("Key "+mapEntry.getKey() +" , "+"Value "+mapEntry.getValue());	
+		}
 	} 
 
 	// Driver method to test above method 

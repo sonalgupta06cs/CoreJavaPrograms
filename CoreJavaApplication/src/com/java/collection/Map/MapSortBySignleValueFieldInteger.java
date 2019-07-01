@@ -45,7 +45,7 @@ public class MapSortBySignleValueFieldInteger {
 		Collections.sort(list, new Comparator<Map.Entry<String, Integer>>() {
 
 			@Override
-			public int compare(Entry<String, Integer> o1, Entry<String, Integer> o2) {
+			public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
 
 				// values will be swapped when 1st value will be greater than 2nd value
 				return (o1.getValue() > o2.getValue()) ? 1 : (o1.getValue() < o2.getValue()) ? -1 : 0;

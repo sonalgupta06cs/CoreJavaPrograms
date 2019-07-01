@@ -6,9 +6,9 @@ interface Age1
 	int x = 21;
 	void getAge();
 }
-class AnonymousDemos
+class AnonymousClass1
 {
-  	Age1 obj1 = new Age1() {
+  	static Age1 obj1 = new Age1() {
 
 			@Override
 			public void getAge() {
@@ -17,12 +17,10 @@ class AnonymousDemos
 			}
 		};
 
-}
-public class AnonymousClass1 extends AnonymousDemo{
-  
-  	public static void main(String[] args) {
-
-		oj1.getAge();
-	}
+		public static void main(String[] args) {
+		
+			obj1.getAge();
+		}
+		
   
 }

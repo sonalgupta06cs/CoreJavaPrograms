@@ -44,7 +44,7 @@ public class SingletonThreadsafe {
  * instance created and is visible if we access that variable through any
  * variable of that class type defined. To design a singleton class:
  * 
- * a.) Make constructor as private. b.) Write a static method that has return
- * type object of this singleton class. Here, the concept of Lazy initialization
- * in used to write this static method.
+ * a.) Make constructor as private. 
+ * b.) Write a static method that has return type object of this singleton class. 
+ * Here, the concept of Lazy initialization is used to write this static method.
  */

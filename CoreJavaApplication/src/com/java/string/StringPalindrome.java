@@ -19,7 +19,7 @@ public class StringPalindrome {
 
 public static void main(String []args){
         
-        String straight = "aabaa";
+        String straight = "abaaabaa";
         System.out.println(isPalindromeString(straight));
         /*String reverse = "" ;
         //System.out.println(str.length()+" "+str.charAt(5));

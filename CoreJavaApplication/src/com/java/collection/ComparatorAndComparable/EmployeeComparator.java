@@ -40,8 +40,6 @@ class Employee implements Comparator<Employee> {
 			return -1;
 		else
 			return 0;
-		
-		if(o1.getName().compareTo(anotherString))
 	}
 
 }

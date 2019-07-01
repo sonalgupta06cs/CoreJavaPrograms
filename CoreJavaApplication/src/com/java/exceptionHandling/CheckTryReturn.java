@@ -6,12 +6,18 @@ public class CheckTryReturn {
 	    System.out.println(CheckTryReturn.test());
 	}
 
+	@SuppressWarnings("finally")
 	public static int test() {
 	    try {
-	        return 0;
+	    	//throw new NullPointerException();
+	        return 1;
 	    }
-	    finally {
+	    catch(Exception e) {
+	    	return 8;
+	    }
+	    /*finally {
 	        System.out.println("finally trumps return.");
-	    }
+	        return 9;
+	    }*/
 	}
 }

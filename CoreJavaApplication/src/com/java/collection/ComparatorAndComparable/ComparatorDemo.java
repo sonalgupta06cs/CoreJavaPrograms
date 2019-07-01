@@ -3,6 +3,7 @@ package com.java.collection.ComparatorAndComparable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 
 // We use comparator when .class file does not have implementation of 
@@ -71,7 +72,7 @@ public class ComparatorDemo {
 		lapList.add(new Laptops("Apple", 1600, 16));
 		lapList.add(new Laptops("Acer", 600, 4));
 
-		Collections.sort(lapList, new Comparator<Laptops>() {
+		/*Collections.sort(lapList, new Comparator<Laptops>() {
 
 			@Override
 			public int compare(Laptops lap1, Laptops lap2) {
@@ -85,12 +86,27 @@ public class ComparatorDemo {
 				}
 
 			}
-		});
+		});*/
+		
+		// or using lambda expression
+		
+		Collections.sort(lapList, (Laptops lap1, Laptops lap2) -> 
+		   {
+				if (lap1.getRAM() > lap2.getRAM()) {
+					return 1;
+				} else if (lap1.getRAM() < lap2.getRAM()) {
+					return -1;
+				} else {
+					return 0;
+				}
 
-		for (Laptops lap : lapList) {
+			});
+		
+		
 
-			System.out.println(lap);
-
+		Iterator<Laptops> iterator = lapList.iterator();
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());
 		}
 
 	}

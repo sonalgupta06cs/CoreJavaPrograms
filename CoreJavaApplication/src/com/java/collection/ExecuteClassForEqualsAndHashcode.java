@@ -12,7 +12,8 @@ public class ExecuteClassForEqualsAndHashcode {
 		StudentOverrideEqualsAndHashCode s1 = new StudentOverrideEqualsAndHashCode("1174");
 		StudentOverrideEqualsAndHashCode s2 = new StudentOverrideEqualsAndHashCode("1174");
 
-		System.out.println("check " + s1.equals(s2)); // it calls the equals() method of Object class
+		System.out.println("check " + s1.equals(s2)); 
+		// it calls the equals() method of Object class
 		System.out.println(s1 == s2);
 
 		Map<StudentOverrideEqualsAndHashCode, ReportCard> studentsReport = new HashMap<>();

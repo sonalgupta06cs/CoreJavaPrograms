@@ -2,7 +2,9 @@ package com.java.collection.ComparatorAndComparable;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 // We use comparable when the objects that we want to sort are not
 // comparable so the objects that we want to sort should implement the 
@@ -67,13 +69,28 @@ public class ComparableDemo {
 		lapList.add(new Laptop("Apple", 1600, 8));
 		lapList.add(new Laptop("Acer", 600, 8));
 		
-		Collections.sort(lapList);
+		//Collections.sort(lapList); // in ascending order
+		Collections.sort(lapList, Collections.reverseOrder()); // in descending order
 		
-		for(Laptop lap:lapList) {
+		Iterator<Laptop> iterator = lapList.iterator();
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
+		
+		System.out.println("*****************************");
+		
+		ListIterator<Laptop> listIterator = lapList.listIterator();
+		while(listIterator.hasNext()) {
+			System.out.println(listIterator.next());
+		}
+		
+		
+		
+		/*for(Laptop lap:lapList) {
 			
 			System.out.println(lap);
 			
-		}
+		}*/
 
 	}
 

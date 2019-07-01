@@ -21,7 +21,8 @@ public class HashSetConcurrentModificationExceptionExample {
 			System.out.println("Processing "+fruit);
 			
 			//wrong way of removing from Set, can throw java.util.ConcurrentModificationException
-			if("Orange".equals(fruit)) fruits.remove("Orange");
+			if("Orange".equals(fruit)) 
+				fruits.remove("Orange");
 		}
 	}
 
