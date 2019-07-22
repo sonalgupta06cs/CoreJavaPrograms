@@ -1,6 +1,6 @@
 package com.java.eurofins.interview;
 
-public class hackerrankspera {
+public class hackerrankspera1 {
 
 	public static void main(String[] args) {
 
@@ -10,6 +10,8 @@ public class hackerrankspera {
         	 int x = f1.intValue();
         	 byte b = f1.byteValue();
         	 double d = f1.doubleValue();
+        	 
+        	 System.out.println("b "+b +" d "+d+ "  x "+x);
         	 
         	 System.out.println(x + b + d);
 			

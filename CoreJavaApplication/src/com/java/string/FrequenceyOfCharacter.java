@@ -42,12 +42,22 @@ public class FrequenceyOfCharacter {
 	       
 	       // Find out the maximum value of a Map
 	       int maxValueInMap = Collections.max(charCountMap.values());
+	       LinkedHashMap<Character, Integer> lmp = new LinkedHashMap<>(charCountMap);
+	       System.out.println("lmp ");
+	       
+	       for(Map.Entry<Character, Integer> lhmmap : lmp.entrySet()) {
+	    	   if(lhmmap.getValue() == 1) {
+	    		   firstNonRepeat = lhmmap.getKey().toString();
+	    		   System.out.println("firstNonRepeat using LHMP "+firstNonRepeat);
+	    		   break;
+	    	   }
+	       }
 	       
 	       for(Map.Entry<Character, Integer> mapEntry : charCountMap.entrySet()) {
 	    	   
 	    	   //System.out.println("mapEntry "+mapEntry);
 	    	   
-	    	   // First Non-Repetitive Character
+	    	   // First Non-Repetitive Character	    	   
 	    	   if(mapEntry.getValue() == 1 && counter == 0) {
 	        	   counter++;
 	        	   firstNonRepeat = mapEntry.getKey().toString();
