@@ -22,6 +22,7 @@ public class ExecutionOfFinally {
             System.out.println("in catch");
 		} finally {
 			System.out.println("i don't know if this will get printed out.");
+			//return "exit";
 		}
 		System.out.println("checking if it comes here");
 		return "exit";

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package exception;
+package com.java.exceptionHandling;
 
 /**
  * @author sgupta
@@ -34,7 +34,7 @@ public class TryCatchReturn {
 		}
 		finally {
 			System.out.println("finally");
-		    return 9;
+		    //return 9;
 		}
 	}
 

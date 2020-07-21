@@ -60,9 +60,9 @@ class EmployeeComparator implements Comparator<Employee1>{
 	public int compare(Employee1 o1, Employee1 o2) {
 		
 		int result = o1.getFirstName().compareToIgnoreCase(o2.getFirstName());
-		if(result != 0) {
+		if(result != 0) { // 1 or -1
 			return result;
-		}else {
+		}else { // when 0
 		    return o1.getLastName().compareToIgnoreCase(o2.getLastName());
 		}
 	}

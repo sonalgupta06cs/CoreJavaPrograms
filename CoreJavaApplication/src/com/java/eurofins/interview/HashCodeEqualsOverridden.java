@@ -15,7 +15,7 @@ public class HashCodeEqualsOverridden {
 	@Override
 	public boolean equals(Object obj) {
 		//System.out.println("equals");
-		return false; // check with true and false
+		return true; // check with true and false
 	}
 	
 	@Override

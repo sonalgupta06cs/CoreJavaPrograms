@@ -48,6 +48,7 @@ public class HappyNumber {
 			return 0;
 		else {
 			int temp = num % 10;
+			System.out.println(temp);
 			return (temp * temp + sumOfSquareOfDigits(num / 10));
 		}
 	}

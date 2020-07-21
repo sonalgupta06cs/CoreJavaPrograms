@@ -15,9 +15,9 @@ public class CheckTryReturn {
 	    catch(Exception e) {
 	    	return 8;
 	    }
-	    /*finally {
+	    finally {
 	        System.out.println("finally trumps return.");
 	        return 9;
-	    }*/
+	    }
 	}
 }

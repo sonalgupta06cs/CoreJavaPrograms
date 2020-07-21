@@ -27,7 +27,7 @@ public class RemoveDuplicatesArrayList {
 		}
 
 		// Remove duplicates using Hashet and LinkedHashSet
-		removeDuplicatesUsingHashSetAndLinkedHashSet(list);
+		//removeDuplicatesUsingHashSetAndLinkedHashSet(list);
 		// Remove duplicates using new ArrayList
         ArrayList<String> newList = removeDuplicates(list);
         System.out.println("newList "+newList);

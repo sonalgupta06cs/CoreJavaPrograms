@@ -16,12 +16,12 @@ public class RemoveGivenWord {
 		if(str.contains(word)) {
 			
 			// if the word is at the end
-			 tempWord =  " " + word;
-			 str = str.replaceAll(tempWord, "");
+			 //tempWord =  " " + word;
+			 str = str.replaceAll(word, "");
 			
 			// if the word is at the beginning or middle
-			tempWord = word + " ";
-			str = str.replaceAll(tempWord, "");
+			//tempWord = word + " ";
+			//str = str.replaceAll(tempWord, "");
 			
 		}
 		
