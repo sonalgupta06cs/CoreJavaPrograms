@@ -6,8 +6,6 @@ public class CalculateLeapYear {
 
 	public static void main(String[] args) {
 		
-		// 2020 -> should be completely modulus by 4, as it is not a century year(ending with 00), it should also be divisible by 400
-		
 		System.out.println("Enter the year:-");
 		Scanner scanner = new Scanner(System.in);
 		int year = scanner.nextInt();
